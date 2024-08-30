@@ -180,8 +180,8 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px; 
-    width: 80%; 
-    height: 80vh;
+    width: 70%; 
+    height: 90vh;
     padding: 20px;
 }
 
@@ -199,6 +199,11 @@ a {
     align-items: center;
     text-align: center;
     width: 100%; 
+}
+
+.img-size {
+    width: 60px;
+    height: auto;;
 }
 
 .hiwText {
