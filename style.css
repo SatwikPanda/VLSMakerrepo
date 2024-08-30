@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.header {
+    height: fit-content;
+    border-bottom: 0.2px solid #0000001a;
+    padding: 33px 72px 33px 72px;
+    gap: 10px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.link, .links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.line {
+    border: 1px solid #11111180;
+    height: 32px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.getStarted {
+    background: #864AF9;
+    color: white;
+    padding: 12px 24px 12px 24px;
+    border: solid 1px #864AF9;
+    border-radius: 8px;
+}
+
+.typography {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.h1hero {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 69.6px;
+    letter-spacing: -3%;
+}
+
+.phero {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -3%;
+    text-align: center;
+}
+
+.highlight {
+    color: #864AF9;
+}
+
+.heroButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroButton {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    gap: 10px;
+}
+
+.PlaceholderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.Placeholder {
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: Fixed (552px)px;
+    padding: 230px 317px 230px 317px;
+    gap: 10px;
+    border-radius: 8px;
+    opacity: 0px;
+}
+
+.heroButton {
+    position: relative;
+    width: fit-content;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    left: -120px;
+}
+
+.lines {
+    position: absolute;
+    left: 35%;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.hero {
+    position: relative;
+}
+
+.ellipse2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+.ellipse1 {
+    position: absolute;
+    top: 80%;
+    left: 82%;
+    z-index: -99;
+    filter: blur(80px);
+}
