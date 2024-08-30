@@ -220,10 +220,10 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    column-gap: 20px;
+    column-gap: 60px;
     row-gap: 60px; 
-    width: 80%; 
-    height: 250vh;
+    width: 70%; 
+    height: 300vh;
     padding: 20px;
 }
 
@@ -282,7 +282,7 @@ a {
 
 .hiwbackgroundmr {
     position: absolute;
-    top: 100vh;
+    top: 125vh;
     left: 80vw;
     z-index: 1;
     filter: blur(100px);
@@ -290,7 +290,7 @@ a {
 
 .hiwbackgroundml {
     position: absolute;
-    top: 150vh;
+    top: 175vh;
     left: 0vw;
     z-index: 1;
     filter: blur(100px);
@@ -298,8 +298,12 @@ a {
 
 .hiwbackgroundbr {
     position: absolute;
-    top: 250vh;
+    top: 300vh;
     left: 80vw;
     z-index: 1;
     filter: blur(100px);
+}
+
+body {
+    overflow-x: hidden;
 }
