@@ -164,3 +164,137 @@ a {
     z-index: -99;
     filter: blur(80px);
 }
+
+.portfoliotext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+    width: 80%; 
+    height: 80vh;
+    padding: 20px;
+}
+
+.grid-item {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: #D9D9D9; 
+    text-align: center; 
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+}
+
+.hiwText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 32px;
+}
+
+.hiwGridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 20px;
+    row-gap: 60px; 
+    width: 80%; 
+    height: 250vh;
+    padding: 20px;
+}
+
+.hiw-grid-item {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background: #D9D9D9; 
+    text-align: left; 
+}
+
+.hiwGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.hiw-text-heading {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -3%;
+    text-align: left;
+}
+
+.white {
+    background: #FFFFFF;
+}
+
+.width {
+    margin-right: 150px;
+}
+
+.width-2 {
+    margin-right: 60px;
+}
+
+.width-3 {
+    margin-right: 60px;
+}
+
+.howitworks {
+    position: relative;
+}
+
+.hiwbackgroundtl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.hiwbackgroundmr {
+    position: absolute;
+    top: 100vh;
+    left: 80vw;
+    z-index: 1;
+    filter: blur(100px);
+}
+
+.hiwbackgroundml {
+    position: absolute;
+    top: 150vh;
+    left: 0vw;
+    z-index: 1;
+    filter: blur(100px);
+}
+
+.hiwbackgroundbr {
+    position: absolute;
+    top: 250vh;
+    left: 80vw;
+    z-index: 1;
+    filter: blur(100px);
+}
