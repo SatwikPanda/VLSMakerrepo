@@ -114,8 +114,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: Fixed (552px)px;
+    width: 224px;
+    height: 100%;
     padding: 230px 317px 230px 317px;
     gap: 10px;
     border-radius: 8px;
@@ -173,18 +173,28 @@ a {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 0px;
+    margin-top: 82px;
+    margin-bottom: 28px;
+}
+
+.portfoliotext h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    letter-spacing: -0.01em;
+    text-align: left;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px; 
-    width: 70%; 
-    height: 90vh;
-    padding: 20px;
+    grid-template-columns: repeat(3, 419px);
+    grid-template-rows: repeat(2, 419px);
+    gap: 20px; 
+    height: fit-content;
+    margin-left: 72px;
+    margin-right: 72px;
+    padding: 0px;
 }
 
 .grid-item {
@@ -214,18 +224,27 @@ a {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 32px;
+    margin-top: 90px;
+    margin-bottom: 48px;
+}
+
+.hiwText h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    letter-spacing: -0.01em;
+    text-align: left;
 }
 
 .hiwGridContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 60px;
-    row-gap: 60px; 
+    grid-template-columns: repeat(2, 430px);
+    grid-template-rows: repeat(6, 288px);
+    column-gap: 107px;
+    row-gap: 48px; 
     width: 70%; 
-    height: 300vh;
+    height: fit-content;
     padding: 20px;
 }
 
@@ -311,7 +330,7 @@ body {
 }
 
 .pricing {
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
 .ptop-text {
@@ -496,7 +515,7 @@ body {
     width: 100%;
     padding-left: 7.5%;
     padding-right: 7.5%;
-    background: whitesmoke;
+    background: white;
     height: 389px;
     box-sizing: border-box;
 }
@@ -621,7 +640,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
 }
 
 .contact-section {
@@ -630,32 +649,43 @@ body {
     border-radius: 10px;
     text-align: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 520px;
 }
 
 .contact-section h1 {
-    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 10px;
-    color: #333;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #101828;
 }
 
 .contact-section p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 40px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #667085;
+    margin-bottom: 64px;
+    max-width: 600px;
 }
 
 .contact-form {
     display: flex;
+    margin-left: 20px;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
+    max-width: 480px;
 }
 
 .form-row {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 32px;
 }
 
 .form-group {
