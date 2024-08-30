@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 html, body{
     margin: 0;
@@ -307,3 +308,262 @@ a {
 body {
     overflow-x: hidden;
 }
+
+.pricing {
+    margin-top: 100px;
+}
+
+.ptop-text {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -3%;
+    text-align: center;
+}
+
+.ptop-p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -3%;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.p-cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px; 
+    width: 85%; 
+    height: fit-content;
+    padding: 20px;
+}
+
+.p-cards-grid-item {
+    display: flex; 
+    flex-direction: column;
+    text-align: left;
+    border: solid 0.2px #0000001a;
+    border-radius: 8px;
+    padding: 32px 28px;
+}
+
+.p-cards-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.mid {
+    border: solid 2px #864AF9;
+}
+
+.g-head {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.4px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.g-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.bold-size {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+}
+
+#font {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+}
+
+.price-promo {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.price {
+    margin-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.benefits-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.p-buttons {
+    width: 250px;
+}
+
+.p-button {
+    background: #864AF9;
+    padding: 12px 32px;
+    width: 82%;
+    border: solid 1px #864AF9;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.mp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hype {
+    color: #864AF9;
+    background: #9DBDFF33;
+    font-size: 14px;
+    padding: 4px 8px 4px 8px;
+    border: solid 1px #9DBDFF33;
+    border-radius: 50px;
+}
+
+.middle {
+    margin-bottom: 32px;
+}
+
+.bottom-heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.more-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottom {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin: 7.5%;
+    gap: 32px;
+}
+
+.more-benefits-items {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.more-benefits-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    background: whitesmoke;
+    height: 389px;
+    box-sizing: border-box;
+}
+
+.cta-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 309px;
+    background: #F1F5F9;
+    width: 100%;
+    padding-left: 72px;
+    padding-right: 72px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+    z-index: 99;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cta-text {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48.6px;
+    text-align: left;
+    color: #864AF9;
+}
+
+.cta-button {
+    background: #864AF9;
+    padding: 12px 32px;
+    border: solid 1px #864AF9;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.cta {
+    position: relative;
+}
+
+.cta-circle {
+    position: absolute;
+    filter: blur(50px);
+    opacity: 60%;
+    z-index: 1;
+}
+
+.cc1 {
+    top: -10vh;
+    left: -8vw;
+}
+
+.cc2 {
+    top: -20vh;
+    left: 40vw;
+}
+
+.cc3 {
+    top: 40vh;
+    right: 0;
+}
+
