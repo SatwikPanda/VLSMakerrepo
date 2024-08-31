@@ -9,15 +9,5 @@ toggleIcon.addEventListener('click', function () {
     password.setAttribute('type', type);
 
     // Toggle the eye icon (optional)
-    //eyeIcon.src = type === 'password' ? '../assets/icons/eye-open.svg' : '../assets/icons/eye-off.svg';
-    if(type === 'password'){
-        eyeIcon.src = '../assets/icons/eye-open.svg';
-        eyeIcon.classList.toggle('eye');
-        console.log("Eye is enagaged")
-    }
-    else {
-        eyeIcon.src = '../assets/icons/eye-off.svg';
-        
-        console.log("Eye is large")
-    }
+    eyeIcon.src = type === 'password' ? 'assets/icons/eye-open.svg' : 'assets/icons/eye-off.svg';
 });

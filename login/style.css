@@ -10,6 +10,10 @@ html, body{
     font-optical-sizing: auto;
 }
 
+body {
+    overflow: hidden;
+}
+
 .form-group {
     flex: 1;
     display: flex;
@@ -61,4 +65,14 @@ button {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.94px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #864AF9;
+    color: white;
+}
+
+button:hover {
+    background: #6b4fc1;
 }
