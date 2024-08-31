@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="
+        width: 100vw; 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        ">
+        <img src="../assets/background/Ellipse 2.svg" alt="" style="
+            position: absolute;
+            z-index: -1;
+
+        ">
+        <div class="form-container" style="
+            width: 400px;
+            padding: 40px 32px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+            box-shadow: 0px 16px 32px -4px #0C0C0D1A;">
+            <form action="" style="
+                display: flex;
+                flex-direction: column;
+                row-gap: 48px;
+                ">
+                <div class="logo" style="
+                    display: flex;
+                    align-items: center;
+                    row-gap: 32px;
+                    flex-direction: column;">
+                    <div style="
+                        display: flex;
+                        align-items: center;">
+                        <img src="../assets/logo 1.svg" alt="assets" style="margin-right: 8px;">
+                        <img src="../assets/logo2.svg" alt="assets">
+                    </div>
+                    <span style="
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 29.26px;
+                        text-align: left;
+                    ">Sign In</span>
+                </div>
+                <div class="form" style="display: flex; flex-direction: column;">
+                    <div class="form-group" style="margin-bottom: 24px;">
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 18px; position: relative;">
+                        <label for="message">Password:</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <div id="toggleIcon" style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: none;
+                            padding: 0;
+                            margin: 0;
+                            width: 24px;
+                            height: 24px;
+                            position: absolute;
+                            right: 24px;
+                            bottom: 12px;
+                            cursor: pointer;">
+                            <img src="../assets/icons/eye-open.svg" alt="eye-off" class="eye" id="eye">
+                        </div>
+                    </div>
+                    <a href="#" class="forgot-password" >Forgot Password?</a>
+                    <button type="submit" style="
+                        padding: 12px 24px;
+                        border: none;
+                        border-radius: 8px;
+                        background: #864AF9;
+                        color: white;
+                        ">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
