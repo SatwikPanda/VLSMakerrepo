@@ -32,7 +32,6 @@ html, body{
     letter-spacing: -0.02em;
     text-align: left;
 }
-
 #pfpdropdown {
     font-family: "Plus Jakarta Sans", sans-serif;
     position: absolute; 
@@ -40,16 +39,21 @@ html, body{
     border: 1px solid #00000080; 
     width: 330px; 
     background: white; 
-    height: 350px; 
-    top: 60px; 
+    height: fit-content; 
+    top: 10px;
+    right: -50px;
     z-index: 1; 
-    transition: 0.3s ease-in;
+    transition: 0.05s ease-in;
+    transform: scale(0.7);
+    user-select: none;
 }
 
 .not-present {
-    right: -1000px;
+    opacity: 0;
+    transition: 0.05s ease;
 }
 
 .present {
-    right: 0px;
+    opacity: 1;
+    transition: 0.05s ease;
 }
