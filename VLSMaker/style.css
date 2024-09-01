@@ -168,3 +168,33 @@ html, body{
     opacity: 1;
     transition: 0.05s ease;
 }
+
+.vh-parent {
+    padding: 10px;
+    width: 5px; 
+    height: 5px; 
+    background: #EEEEEE; 
+    border-radius: 90px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    cursor: pointer;
+}
+
+.vh-child {
+    position: absolute; 
+    width: 340px; height: 
+    fit-content; background: white;
+    border: 1px solid #E3E3E3; 
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    padding: 12px; 
+    left: 20px; 
+    bottom: 30px;
+    display: none;
+}
+
+.vh-parent:hover .vh-child {
+    display: block;
+}
