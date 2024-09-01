@@ -2,22 +2,23 @@ const box1 = document.getElementById('box-1');
 const circle11 = document.getElementById('circle-11');
 const circle12 = document.getElementById('circle-12');
 
+
 const box2 = document.getElementById('box-2');
 const circle21 = document.getElementById('circle-21');
 const circle22 = document.getElementById('circle-22');
 
 function activateBox(selectedBox, selectedCircle1, selectedCircle2) {
     // Remove styles from all boxes and circles
-    box1.style.border = '2px solid #888888';
+    box1.style.border = '1px solid #88888877';
     circle11.style.border = '3px solid #D9D9D9';
     circle12.style.backgroundColor = '#D9D9D9';
 
-    box2.style.border = '2px solid #888888';
+    box2.style.border = '1px solid #88888877';
     circle21.style.border = '3px solid #D9D9D9';
     circle22.style.backgroundColor = '#D9D9D9';
 
     // Add styles to the selected box and circles
-    selectedBox.style.border = '2px solid #864AF9';  // Example style for box-border
+    selectedBox.style.border = '1px solid #864AF9';  // Example style for box-border
     selectedCircle1.style.border = '3px solid #864AF9';  // Example style for circle-outer
     selectedCircle2.style.backgroundColor = '#864AF9';  // Example style for circle-inner
 }
@@ -63,9 +64,20 @@ slider.addEventListener('input', function() {
 slider.dispatchEvent(new Event('input'));
 
 const color1 = document.getElementById('color1');
+const colorPicker1 = document.getElementById('colorPicker1');
 const colortext1 = document.getElementById('colortext1');
 let colorvalue1 = '#FFFFFF';
 
+    colorPicker1.addEventListener('input', function() {
+         // Update the background color of the div in real-time
+        color1.style.background = colorPicker1.value;
+        colortext1.value = colorPicker1.value;
+        if(color1.style.border === '1px solid red') {
+            color1.style.border = '1px solid #000000B2';
+            colortext1.style.border = '1px solid #000000B2';
+            color1.style.background = colortext1.value;
+        }
+    });
     colortext1.addEventListener('input', function() {
     colorvalue1 = colortext1.value;
 
@@ -81,10 +93,22 @@ let colorvalue1 = '#FFFFFF';
     }
 });
 
+
 const color2 = document.getElementById('color2');
+const colorPicker2 = document.getElementById('colorPicker2');
 const colortext2 = document.getElementById('colortext2');
 let colorvalue2 = '#FFFFFF';
 
+    colorPicker2.addEventListener('input', function() {
+         // Update the background color of the div in real-time
+        color2.style.background = colorPicker2.value;
+        colortext2.value = colorPicker2.value;
+        if(color2.style.border === '1px solid red') {
+            color2.style.border = '1px solid #000000B2';
+            colortext2.style.border = '1px solid #000000B2';
+            color2.style.background = colortext1.value;
+        }
+    });
     colortext2.addEventListener('input', function() {
     colorvalue2 = colortext2.value;
 
