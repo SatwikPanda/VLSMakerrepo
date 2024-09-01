@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scene Selection</title>
+    <title>Background Music</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="bg"></div>
+<body class="bg">
     <header style="padding: 12px 108px; border-bottom: 1px solid rgba(0, 0, 0, 0.171);">
         <div style="display: flex; justify-content: space-between;">
             <div style="display: flex; align-items: center;">
@@ -43,11 +42,11 @@
         <div style="width: 624px; height: 10px; background: #EEEEEE; position: relative; display: flex; align-items: center;">
             <div style="position: absolute; width: 25px; height: 25px; background: #864AF9; border-radius: 90px; left: 0%;"></div>
             <div style="position: absolute; width: 25px; height: 25px; background: #864AF9; border-radius: 90px; left: 208px"></div>
-            <div style="position: absolute; width: 25px; height: 25px; background: #EEEEEE; border-radius: 90px; left: 416px;"></div>
+            <div style="position: absolute; width: 25px; height: 25px; background: #864AF9; border-radius: 90px; left: 416px;"></div>
             <div style="position: absolute; width: 25px; height: 25px; background: #EEEEEE; border-radius: 90px; left: 100%;"></div>
 
 
-            <div style="position: absolute; width: 220px; height: 10px; background: #864AF9; border-radius: 90px; left: 0;"></div>
+            <div style="position: absolute; width: 426px; height: 10px; background: #864AF9; border-radius: 90px; left: 0;"></div>
 
 
             <div style="position: absolute; top: -50px; left: -92.96px;">Voice & Subtitle Design</div>
@@ -56,117 +55,88 @@
             <div style="position: absolute; top: -50px; left: 594px;">Download</div>
         </div>
     </div>
-    <div class="scene-container" style="display: flex; justify-content: center; align-items: center;">
-        <div class="Scene" style="width: fit-content; height: 703px; margin-bottom: 40px; border: 1px solid #0000004D; box-sizing: border-box; border-radius: 8px; padding: 40px 24px;  background: white;">
-            <div class="select-scene-text" style="display: flex; justify-content: center; margin-bottom: 48px;">
-                <span style="font-size: 24px; font-weight: 700; line-height: 29.26px; text-align: center;">
-                    Select Your Scenes
-                </span>
+    <div class="content" style="display: flex; justify-content: center; width: 100%; margin-bottom: 50px; z-index: 99; background: transparent;">
+        <div style="width: 524px; padding: 40px 24px; background: white; border: 1px solid #0000004D; border-radius: 8px; display: flex; gap: 48px; flex-direction: column;">
+            <div class="heading" style="display: flex; width: 100%; justify-content: center;">
+                <span style="font-size: 24px;font-weight: 700;line-height: 29.26px;text-align: center;">Select Your Background Music</span>
             </div>
-            <div class="grid-container">
-                <div class="grid-items">
-                    <div class="grid-item title"><span>Slide</span></div>
-                    <div class="grid-item title"><span>Slide Text</span></div>
-                    <div class="grid-item title"><span>Upload Scene</span></div>
-                    <div class="grid-item title right"><span>Upload Scene From Asset Folder</span></div>
-                    <div class="grid-item"><span>Slide 1</span></div>
-                    <div class="grid-item"><span>For years I’ve struggled with incontinence</span></div>
-                    <div class="grid-item center">
-                        <div style="width: 100%; height: fit-content; padding: 16px 24px; border-radius: 8px; border: 1px dashed #19191980; display: flex; align-items: center; position: relative; font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center; gap: 14px;">
-                            <svg id="svg1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M14.1667 6.66667L10 2.5M10 2.5L5.83333 6.66667M10 2.5V12.5" stroke="#191919B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                
-                            <div id="uploadText1" style="font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center;">
-                                Choose File
-                            </div>
-                            <input type="file" name="uploadScene" id="fileUpload1" style="position: absolute; width: 100%; height: 100%; left: 0; opacity: 0;">
-                        </div>
-                    </div>
-                    <div class="grid-item right">
-                        <div style="display: flex; width: 100%; height: fit-content; gap: 10px; align-items: center; flex-direction: column;">
-                            <div style="background: #EEEEEE; display: flex; justify-content: space-between; width: 100%; padding: 10px 12px; border-radius: 8px; cursor: pointer;">
-                                <span class="text">Select Topic</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 9L12 15L18 9" stroke="#050315" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>    
-                            </div>
-                            <div style="background: #EEEEEE; display: flex; justify-content: space-between; width: 100%; padding: 10px 12px; border-radius: 8px; cursor: pointer;">
-                                <span class="text">Select Topic</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 9L12 15L18 9" stroke="#050315" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item"><span>Slide 2</span></div>
-                    <div class="grid-item"><span>It started as just a few small leaks here and there</span></div>
-                    <div class="grid-item center">
-                        <div style="width: 100%; height: fit-content; padding: 16px 24px; border-radius: 8px; border: 1px dashed #19191980; display: flex; align-items: center; position: relative; font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center; gap: 14px;">
-                            <svg id="svg2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M14.1667 6.66667L10 2.5M10 2.5L5.83333 6.66667M10 2.5V12.5" stroke="#191919B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                
-                            <div id="uploadText2" style="font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center;">
-                                Choose File
-                            </div>
-                            <input type="file" name="uploadScene" id="fileUpload2" style="position: absolute; width: 100%; height: 100%; left: 0; opacity: 0;">
-                        </div>
-                    </div>
-                    <div class="grid-item right">
-                        <div style="display: flex; width: 100%; height: fit-content; gap: 10px; align-items: center; flex-direction: column;">
-                            <div style="background: #EEEEEE; display: flex; justify-content: space-between; width: 100%; padding: 10px 12px; border-radius: 8px; cursor: pointer;">
-                                <span class="text">Select Topic</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 9L12 15L18 9" stroke="#050315" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>    
-                            </div>
-                            <div style="background: #EEEEEE; display: flex; justify-content: space-between; width: 100%; padding: 10px 12px; border-radius: 8px; cursor: pointer;">
-                                <span class="text">Select Topic</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 9L12 15L18 9" stroke="#050315" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item bottom"><span>Slide 3</span></div>
-                    <div class="grid-item bottom"><span>But over time, it got worse</span></div>
-                    <div class="grid-item bottom center">
-                        <div style="width: 100%; height: fit-content; padding: 16px 24px; border-radius: 8px; border: 1px dashed #19191980; display: flex; align-items: center; position: relative; font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center; gap: 14px;">
-                            <svg id="svg3" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M14.1667 6.66667L10 2.5M10 2.5L5.83333 6.66667M10 2.5V12.5" stroke="#191919B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                
-                            <div id="uploadText3" style="font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center;">
-                                Choose File
-                            </div>
-                            <input type="file" name="uploadScene" id="fileUpload3" style="position: absolute; width: 100%; height: 100%; left: 0; opacity: 0;">
-                        </div>
-                    </div>
-                    <div class="grid-item right bottom">
-                        <div style="display: flex; width: 100%; height: fit-content; gap: 10px; align-items: center; flex-direction: column;">
-                            <div style="background: #EEEEEE; display: flex; justify-content: space-between; width: 100%; padding: 10px 12px; border-radius: 8px; cursor: pointer;">
-                                <span class="text">Select Topic</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 9L12 15L18 9" stroke="#050315" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>    
-                            </div>
-                            <div style="background: #EEEEEE; display: flex; justify-content: space-between; width: 100%; padding: 10px 12px; border-radius: 8px; cursor: pointer;">
-                                <span class="text">Select Topic</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 9L12 15L18 9" stroke="#050315" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="button" style="width: 100%; display: flex; flex-direction: row-reverse; align-items: center;">
-                <div style="display: flex; align-items: center; justify-content: center; text-align: center; justify-content: center; border-radius: 8px; padding: 12px 24px; background: #864AF9; width: fit-content; cursor: pointer;">
-                    <a href="../loading/index.html" style=" text-decoration: none; color: white; font-family: Montserrat;font-size: 18px;font-weight: 500;line-height: 24px;text-align: left; margin-right: 10px;">
-                        Proceed To Background Music Selection
-                    </a>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <div class="video" style="display: flex; width: 100%; height: fit-content; justify-content: center;">
+                <div class="placeholder" style="height: 376px; background: #D9D9D9; width: 100%; border-radius: 8px; display: flex; justify-content: center; align-items: center;">
+                    <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43 84.6667C66.0119 84.6667 84.6667 66.0119 84.6667 43C84.6667 19.9881 66.0119 1.33334 43 1.33334C19.9881 1.33334 1.33334 19.9881 1.33334 43C1.33334 66.0119 19.9881 84.6667 43 84.6667Z" stroke="#00000080" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M34.6667 26.3333L59.6667 43L34.6667 59.6667V26.3333Z" stroke="#00000080" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                        
                 </div>
+            </div>
+            <div class="file-upload-container" id="targetDiv" style="display: flex; width: 100%; height: fit-content; justify-content: center; gap: 48px; flex-direction: column;">
+                <div class="uploadmp3" style="display: flex; width: 100%; height: fit-content; justify-content: center; gap: 24px; flex-direction: column;">
+                    <div class="text">
+                        <span>Upload MP3 <span>1</span>:</span>
+                    </div>
+                    <div style="width: 100%; box-sizing: border-box; height: fit-content; padding: 16px 24px; border-radius: 8px; border: 1px dashed #19191980; display: flex; align-items: center; position: relative; font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center; gap: 14px;">
+                        <svg id="svg1" class="svgIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M14.1667 6.66667L10 2.5M10 2.5L5.83333 6.66667M10 2.5V12.5" stroke="#191919B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input class="fileInput" type="file" name="uploadScene" id="fileUpload1" style="position: absolute; width: 100%; height: 100%; left: 0; opacity: 0;">                                
+                        <div class="output" id="uploadText1" style="font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center;">
+                            Choose File
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span>What Second Should This MP3 Play From? <span style="font-size: 12px;font-weight: 500;line-height: 14.63px;text-align: left;">In Minutes</span></span>
+                    </div>
+                    <div style="display: flex; gap: 24px; width: 100%;">
+                        <div style="display: flex; flex-direction: column; width: 100%; gap: 16px;">
+                            <span class="text" style="width: 100%; text-align: left;">Start:</span>
+                            <input type="text" placeholder="00:00" class="time" style="padding: 12px 24px; border: 1px solid #E3E3E3; border-radius: 4px;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width: 100%; gap: 16px;">
+                            <span class="text" style="width: 100%; text-align: left;">End:</span>
+                            <input type="text" placeholder="00:00" class="time" style="padding: 12px 24px; border: 1px solid #E3E3E3; border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="uploadmp3" style="display: flex; width: 100%; height: fit-content; justify-content: center; gap: 24px; flex-direction: column;">
+                    <div class="text">
+                        <span>Upload MP3 <span>2</span>:</span>
+                    </div>
+                    <div style="width: 100%; box-sizing: border-box; height: fit-content; padding: 16px 24px; border-radius: 8px; border: 1px dashed #19191980; display: flex; align-items: center; position: relative; font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center; gap: 14px;">
+                        <svg id="svg1" class="svgIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M14.1667 6.66667L10 2.5M10 2.5L5.83333 6.66667M10 2.5V12.5" stroke="#191919B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input class="fileInput" type="file" name="uploadScene" id="fileUpload1" style="position: absolute; width: 100%; height: 100%; left: 0; opacity: 0;">                                
+                        <div class="output" id="uploadText1" style="font-size: 16px; font-weight: 400; line-height: 23.2px; letter-spacing: 0.02em; text-align: center;">
+                            Choose File
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span>What Second Should This MP3 Play From? <span style="font-size: 12px;font-weight: 500;line-height: 14.63px;text-align: left;">In Minutes</span></span>
+                    </div>
+                    <div style="display: flex; gap: 24px; width: 100%;">
+                        <div style="display: flex; flex-direction: column; width: 100%; gap: 16px;">
+                            <span class="text" style="width: 100%; text-align: left;">Start:</span>
+                            <input type="text" placeholder="00:00" class="time" style="padding: 12px 24px; border: 1px solid #E3E3E3; border-radius: 4px;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width: 100%; gap: 16px;">
+                            <span class="text" style="width: 100%; text-align: left;">End:</span>
+                            <input type="text" placeholder="00:00" class="time" style="padding: 12px 24px; border: 1px solid #E3E3E3; border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="insertButton" class="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M12 5V19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+                Upload More MP3
+            </button>
+            <div style="width: 100%; display: flex; justify-content: flex-end;">
+                <a href="../loading2/index.html" class="button" style="text-decoration: none; ">
+                    Create VSL
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
