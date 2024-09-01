@@ -2,6 +2,6 @@
 
 function redirectAfterDelay() {
     setTimeout(function() {
-        window.location.href = "../download/index.html";
+        window.location.href = "../Download/index.html";
     }, 3000);
 }
