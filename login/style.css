@@ -60,8 +60,10 @@ body {
     color: #6b4fc1;
 }
 
-button {
+.button {
     font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    text-align: center;
     font-size: 18px;
     font-weight: 500;
     line-height: 21.94px;
@@ -73,6 +75,6 @@ button {
     color: white;
 }
 
-button:hover {
+.button:hover {
     background: #6b4fc1;
 }
