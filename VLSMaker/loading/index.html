@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="redirectAfterDelay()">
+<body onload="redirectAfterDelay()" style="position: relative; overflow-x: hidden;">
     <div class="bg"></div>
     <header style="padding: 8px 108px; border-bottom: 1px solid rgba(0, 0, 0, 0.171);">
         <div style="display: flex; justify-content: space-between;">
@@ -25,7 +25,7 @@
                 </svg>
                 <a href="../login/index.html" style="position: absolute; width: 100%; height: 100%;"></a>              
             </div>
-            <div class="right" style="display: flex; align-items: center;">
+            <div class="right" style="display: flex; align-items: center; position: relative;">
                 <span style="
                 font-size: 16px;
                 font-weight: 500;
@@ -33,13 +33,32 @@
                 text-align: left;
                 ">Credits Remaining: <span id="number">10</span></span>
                 <div class="line" style="border: 1px solid #00000080; height: 30px; margin: 0px 16px;"></div>
-                <div class="img" style="display: flex; justify-content: center; align-items: center;">
+                <div class="img" id="pfp" style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
                     <div style="width: 20px; height: 20px; background: #C4C4C4; border-radius: 90px; justify-content: center; align-items: center; gap: 10px; display: flex; padding: 18px">
                         <div style="width: 24px; height: auto;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13ZM12 13C14.1217 13 16.1566 13.8429 17.6569 15.3431C19.1571 16.8434 20 18.8783 20 21M12 13C9.87827 13 7.84344 13.8429 6.34315 15.3431C4.84285 16.8434 4 18.8783 4 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
+                    </div>
+                </div>
+                <div class="not-present" id="pfpdropdown">
+                    <div style="border-bottom: 0.2px solid #00000080; box-sizing: border-box; width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 18px 14px;">
+                        <span style="font-size: 24px;font-weight: 600;line-height: 30.24px;letter-spacing: -0.02em;text-align: left; color: #191919;">Olivia Rhye</span>
+                        <span style="font-size: 20px;font-weight: 400;line-height: 25.2px;letter-spacing: -0.02em;text-align: left; color: #191919B2;">olivia@example.com</span>
+                    </div>
+                    <div style="border-bottom: 0.2px solid #00000080; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px; padding: 18px 14px ;">
+                        <span class="dropdownText">View profile</span>
+                        <div class="display: flex; box-sizing: border-box; width: 100%; flex-direction: row; ">
+                            <div class="dropdownText" style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
+                                <span class="dropdownText" style="width: fit-content;" >Credit left</span>
+                                <span class="dropdownText" style="width: fit-content; color: #19191980;">10</span>
+                            </div>
+                        </div>
+                        <span class="dropdownText">Setting</span>
+                    </div>
+                    <div style="width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px; padding: 18px 14px ;">
+                        <span class="dropdownText">Log out</span>
                     </div>
                 </div>
             </div>

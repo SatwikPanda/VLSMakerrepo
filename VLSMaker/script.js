@@ -52,6 +52,7 @@ const sliderValue = document.getElementById("SliderValue");
 
 slider.addEventListener('input', function() {
     sliderValue.textContent = slider.value;
+    previewText.style.fontSize = `${slider.value}px`;
 });
 
 slider.addEventListener('input', function() {
@@ -67,11 +68,14 @@ const color1 = document.getElementById('color1');
 const colorPicker1 = document.getElementById('colorPicker1');
 const colortext1 = document.getElementById('colortext1');
 let colorvalue1 = '#FFFFFF';
+const previewText = document.getElementById('previewText');
 
     colorPicker1.addEventListener('input', function() {
          // Update the background color of the div in real-time
         color1.style.background = colorPicker1.value;
         colortext1.value = colorPicker1.value;
+        previewText.style.color = colortext1.value;
+
         if(color1.style.border === '1px solid red') {
             color1.style.border = '1px solid #000000B2';
             colortext1.style.border = '1px solid #000000B2';
@@ -97,12 +101,14 @@ let colorvalue1 = '#FFFFFF';
 const color2 = document.getElementById('color2');
 const colorPicker2 = document.getElementById('colorPicker2');
 const colortext2 = document.getElementById('colortext2');
+const previewBackground = document.getElementById('previewBackground');
 let colorvalue2 = '#FFFFFF';
 
     colorPicker2.addEventListener('input', function() {
          // Update the background color of the div in real-time
         color2.style.background = colorPicker2.value;
         colortext2.value = colorPicker2.value;
+        previewBackground.style.background = colortext2.value;
         if(color2.style.border === '1px solid red') {
             color2.style.border = '1px solid #000000B2';
             colortext2.style.border = '1px solid #000000B2';
@@ -123,3 +129,14 @@ let colorvalue2 = '#FFFFFF';
         color2.style.background = '#FFFFFF';
     }
 });
+
+
+
+const pfp = document.getElementById('pfp');
+const dropdown = document.getElementById('pfpdropdown');
+
+    pfp.addEventListener('click', function() {
+        dropdown.classList.toggle('not-present');
+        dropdown.classList.toggle('present');
+    });
+

@@ -90,3 +90,38 @@ html, body{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(196, 113, 255, 0.06) 88%, rgba(148, 0, 255, 0) 100%);
     z-index: -1;
 }
+
+
+.dropdown {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.dropdownText {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#pfpdropdown {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: absolute; 
+    border-radius: 8px; 
+    border: 1px solid #00000080; 
+    width: 330px; 
+    background: white; 
+    height: 350px; 
+    top: 60px; 
+    z-index: 1; 
+    transition: 0.3s ease-in;
+}
+
+.not-present {
+    right: -1000px;
+}
+
+.present {
+    right: 0px;
+}
