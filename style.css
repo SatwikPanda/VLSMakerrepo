@@ -155,12 +155,12 @@ a {
     position: absolute;
     left: -120px;
 }
-
 .lines {
     position: absolute;
     left: 35%;
     z-index: -1;
     opacity: 50%;
+    clip-path: inset(0 0 0 0);
 }
 
 .hero {
@@ -967,7 +967,15 @@ button:hover {
 .ptop-text br {
     display: block;
 }
-
+.header img:nth-child(1) {
+    display: none;
+}
+.topbar {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
 
 
 
@@ -1061,14 +1069,21 @@ button:hover {
         height: fit-content;
         overflow: hidden;
     }
+    .background {
+        width: 100%;
+        overflow-x: hidden;
+    }
     .ellipse1 {
         left: 50%;
         opacity: 0.8;
     }
+
     .lines {
-        left: -30px;
-        top: -50%;
+        width: 90%;
+        left: 0px;
+        top: 0;
         opacity: 1;
+        clip-path: inset(0 0 0 0);
     }
     .heroellipse {
         display: none;
@@ -1231,6 +1246,7 @@ button:hover {
         display: none;
     }
     .p-cards-grid-container {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1361,5 +1377,128 @@ button:hover {
     #footer-logo {
         display: block;
     }
+    .grid {
+        display: none;
+    }
+    .image-slider {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        padding: 16px;
+        position: relative;
+    }
+    .slider-container {
+        box-sizing: border-box;
+        width: 100%;
+        aspect-ratio: 1;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        transition: 0.1s ease-in-out;
+    }
+    .slider-button {
+        background: #D9D9D9;
+        width: 8px;
+        height: 8px;
+        border-radius: 5px;
+    }
+    .slider-button-container {
+        position: absolute;
+        left: 40%;
+        bottom: 0px;
+        display: flex;
+        gap: 4px;
+    }
+    .selected {
+        width: 16px;
+        background: #864AF9;
+    }
 
+    .slider-button a {
+        opacity: 0;
+    }
+    .header {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 400px; /* Adjust based on your design */
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        box-sizing: border-box;
+        
+    }
+    
+    .Placeholder {
+        width: 90%;
+        aspect-ratio: 1;
+        border-radius: 8px;
+    }
+    
+    .slider-dots {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .dot {
+        height: 8px;
+        width: 8px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 4px;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .dot.active {
+        background-color: #8e44ad;
+        width: 16px; /* Active dot color */
+    }
+    .header {
+        position: relative;
+        overflow: visible;
+    }
+    .topbar {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        background: white;
+        opacity: 1;
+        width: 100vw;
+        left: 0;
+        height: 80vh;
+        bottom: -60vh;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: 0.3s ease;
+    }
+    .hamburger {
+        display: block;
+        z-index: 9999;
+    }
+    .links-topbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .links-topbar a {
+        color: black;
+
+    }
 }
