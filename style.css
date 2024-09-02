@@ -976,6 +976,51 @@ button:hover {
 .hamburger {
     display: none;
 }
+.hiw-effects1 {
+    width: 350px; 
+    height: auto; 
+    position: absolute;  
+    top: -4%;
+    left: -2%; 
+    z-index: -1; 
+    filter: blur(80px); 
+    opacity: 60%;
+}
+.hiw-effects2 {
+    position: absolute; 
+    top: 38%; 
+    left: 85%; 
+    z-index: -1; 
+    filter: blur(90px);
+    opacity: 80%;
+}
+.hiw-effects3 {
+    position: absolute; 
+    top: 52%; 
+    left: 0; 
+    z-index: -1; 
+    filter: blur(90px);
+    opacity: 80%;
+
+}
+.hiw-effects4 {
+    position: absolute; 
+    top: 90%; 
+    left: 85%; 
+    z-index: -1; 
+    filter: blur(80px);
+    opacity: 80%;
+}
+.slides, .slide-dots {
+    display: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1380,6 +1425,10 @@ button:hover {
     .grid {
         display: none;
     }
+    .slides, .slide-dots {
+        display: block;
+    }
+
     .image-slider {
         width: 100%;
         height: fit-content;
@@ -1480,7 +1529,7 @@ button:hover {
         width: 100vw;
         left: 0;
         height: 80vh;
-        bottom: -60vh;
+        bottom: 100vh;
         z-index: 99;
         display: flex;
         justify-content: center;
