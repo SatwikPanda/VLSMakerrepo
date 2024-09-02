@@ -811,7 +811,7 @@ button:hover {
 .tagline {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     text-align: left;
     color: #FFFFFFB2;
@@ -1014,10 +1014,52 @@ button:hover {
 .slides, .slide-dots {
     display: none;
 }
+.howitworks img:nth-child(1) {
+    width: 350px; height: auto;
+    position: absolute; 
+    top: -4%; 
+    left: -2%; 
+    z-index: -1; 
+    filter: blur(80px);
+    opacity: 60%;
+}
+.howitworks img:nth-child(2) {
+    position: absolute; 
+    top: 38%; 
+    left: 85%; 
+    z-index: -1; 
+    filter: blur(90px);
+    opacity: 80%;
+}
+.howitworks img:nth-child(3) {
+    position: absolute; 
+    top: 52%; 
+    left: 0; 
+    z-index: -1; 
+    filter: blur(90px);
+    opacity: 80%;
 
+}
+.howitworks img:nth-child(4) {
+    position: absolute; 
+    top: 90%; 
+    left: 85%; 
+    z-index: -1; 
+    filter: blur(80px);
+    opacity: 80%;
 
+}
 
+.howitworks img:nth-child(5) {
+    display: block;
+    position: absolute; 
+    top: 90%; 
+    left: 85%; 
+    z-index: -1; 
+    filter: blur(80px);
+    opacity: 80%;
 
+}
 
 
 
@@ -1313,6 +1355,12 @@ button:hover {
         margin-top: 24px;
         margin-bottom: 32px;
     }
+    .p-cards-grid-item {
+        border: 1px solid #c5c5c5;
+    }
+    .mid {
+        border: 2px solid #864AF9;
+    }
     .p-cards-grid-item a {
         box-sizing: border-box;
         width: 100%;
@@ -1548,6 +1596,30 @@ button:hover {
     }
     .links-topbar a {
         color: black;
+
+    }
+    .howitworks img:nth-child(1) {
+        left: -50%;
+    }
+    .howitworks img:nth-child(2) {
+        top: 30%;
+    }
+    .howitworks img:nth-child(3) {
+        top: 45%;
+        left: -30%;
+    }
+    .howitworks img:nth-child(4) {
+        top: 75%;
+    }
+    
+    .howitworks img:nth-child(5) {
+        display: block;
+        position: absolute; 
+        top: 94%; 
+        left: -30%; 
+        z-index: -1; 
+        filter: blur(100px);
+        opacity: 80%;
 
     }
 }
