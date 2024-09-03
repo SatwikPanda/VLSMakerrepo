@@ -43,9 +43,20 @@ a {
 }
 
 .link, .links {
+    font-weight: 400;
+    color: #111111;
     display: flex;
     align-items: center;
     gap: 32px;
+}
+@media screen and (min-width: 1440px) {
+    .logo {
+        transform: scale(1.08);
+    }
+    .link, .links {
+        font-size: 20px;
+        color: #111111;
+    }
 }
 
 .line {
@@ -160,7 +171,6 @@ a {
     left: 35%;
     z-index: -1;
     opacity: 50%;
-    clip-path: inset(0 0 0 0);
 }
 
 .hero {
@@ -168,19 +178,20 @@ a {
 }
 
 .ellipse2 {
+    width: 250px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 3%;
     z-index: -1;
-    filter: blur(80px);
+    filter: blur(160px);
 }
 
 .ellipse1 {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 82%;
     z-index: -99;
-    filter: blur(80px);
+    filter: blur(100px);
 }
 
 .portfoliotext {
@@ -342,7 +353,7 @@ a {
 }
 
 .pricing {
-    margin-top: 160px;
+    margin-top: 0px;
 }
 
 .ptop-text {
@@ -523,6 +534,7 @@ a {
 }
 
 .more-benefits-text {
+    color: #000000B2;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.6px;
@@ -602,7 +614,7 @@ a {
 
 .cta-circle {
     position: absolute;
-    filter: blur(50px);
+    filter: blur(80px);
     opacity: 60%;
     z-index: 1;
 }
@@ -681,6 +693,7 @@ a {
 .contact-section {
     background-color: #fff;
     padding: 40px 60px;
+    padding: 80px;
     border-radius: 10px;
     text-align: center;
     width: 100%;
@@ -730,10 +743,13 @@ a {
 }
 
 .form-group label {
-    font-size: 0.9rem;
-    color: #333;
-    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
     text-align: left;
+    color: #344054;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .form-group input,
@@ -741,10 +757,11 @@ a {
     font-family: "Montserrat", sans-serif;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: 0.3s ease;
+    box-shadow: 0px 1px 2px 0px #1018280D;
 }
 
 .form-group input:focus,
@@ -758,12 +775,20 @@ textarea {
 }
 
 button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    
+
+
     padding: 15px;
-    font-size: 1rem;
-    background-color: #7f56d9;
+    background-color: #864AF9;
+    margin-top: 12px;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -784,7 +809,7 @@ button:hover {
 
 .footer {
     width: 100%;
-    max-width: 1200px;  
+    max-width: 1166px;  
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -793,7 +818,7 @@ button:hover {
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 1px solid #E2E8F0;
-    padding-bottom: 40px;
+    padding-bottom: 24px;
 }
 .logo {
     display: flex;
@@ -811,7 +836,7 @@ button:hover {
 .tagline {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
     text-align: left;
     color: #FFFFFFB2;
@@ -821,6 +846,7 @@ button:hover {
 }
 .footer-links {
     display: flex;
+    gap: 98px;
 }
 .footer-column {
     margin-left: 60px;
@@ -851,10 +877,10 @@ button:hover {
     line-height: 24px;
     text-align: left;
     color: #FFFFFFB2;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 }
 .footer-column a {
-    color: #cccccc;
+    color: rgba(255, 255, 255, 0.704);
     text-decoration: none;
     font-size: 14px;
 }
@@ -868,7 +894,7 @@ button:hover {
     line-height: 22px;
     text-align: center;
     color: #FFFFFF80;
-    margin-top: 20px;
+    margin-top: 48px;
 }
 
 .logo-small {
@@ -887,7 +913,7 @@ button:hover {
     width: 100%; 
     box-sizing: border-box;
     letter-spacing: -0.7px;
-    height: 2270px; 
+    height: fit-content; 
     padding-left: 72px; 
     padding-right: 72px; 
     margin-top: 60px;
@@ -899,9 +925,10 @@ button:hover {
     justify-content: flex-start; 
     align-items: center; 
     gap: 98px; 
-    display: inline-flex;
+    display: flex;
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .hiw-heading-text {
@@ -916,7 +943,7 @@ button:hover {
 }
 
 .hiw-container {
-    height: 1968px; 
+    height: fit-content; 
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
@@ -1014,44 +1041,46 @@ button:hover {
 .slides, .slide-dots {
     display: none;
 }
+
 .howitworks img:nth-child(1) {
     width: 350px; height: auto;
     position: absolute; 
-    top: -4%; 
+    top: 1%; 
     left: -2%; 
     z-index: -1; 
-    filter: blur(80px);
-    opacity: 60%;
+    filter: blur(180px);
+    opacity: 100%;
 }
 .howitworks img:nth-child(2) {
+    width: 350px; height: auto;
     position: absolute; 
     top: 38%; 
     left: 85%; 
     z-index: -1; 
-    filter: blur(90px);
-    opacity: 80%;
+    filter: blur(180px);
+    opacity: 1;
 }
 .howitworks img:nth-child(3) {
+    width: 350px; height: auto;
     position: absolute; 
     top: 52%; 
     left: 0; 
     z-index: -1; 
-    filter: blur(90px);
-    opacity: 80%;
+    filter: blur(180px);
 
 }
 .howitworks img:nth-child(4) {
+    width: 350px; height: auto;
     position: absolute; 
-    top: 90%; 
+    top: 80%; 
     left: 85%; 
     z-index: -1; 
-    filter: blur(80px);
-    opacity: 80%;
+    filter: blur(180px);
 
 }
 
 .howitworks img:nth-child(5) {
-    display: block;
+    display: none;
     position: absolute; 
     top: 90%; 
     left: 85%; 
@@ -1107,6 +1136,9 @@ button:hover {
     }
     .hero {
         margin: 0px 16px;
+    }
+    .highlight br {
+        display: none;
     }
     .typography h1{
         font-size: 24px;
@@ -1599,14 +1631,21 @@ button:hover {
 
     }
     .howitworks img:nth-child(1) {
+        width: 200px;
         left: -50%;
+        filter: blur(80px);
     }
     .howitworks img:nth-child(2) {
-        top: 30%;
+        width: 200px;
+        top: 29%;
+        filter: blur(80px);
+        opacity: 1;
     }
     .howitworks img:nth-child(3) {
+        width: 200px;
         top: 45%;
         left: -30%;
+        filter: blur(120px);
     }
     .howitworks img:nth-child(4) {
         top: 75%;
